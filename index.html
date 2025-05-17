@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fantastic Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-gray-300 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-semibold text-center">My Fantastic Website</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow flex justify-center items-center">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl text-center">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Welcome!</h2>
+            <p class="text-gray-700 mb-6">This is a basic website built with HTML, CSS, and JavaScript.  It's designed to be a starting point for your own fantastic creations.</p>
+            <button id="magicButton" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out">
+                Make it Fantastic!
+            </button>
+            <div id="messageArea" class="mt-6 text-gray-800 font-medium">
+                Click the button to see some magic happen!
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-3 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4 text-center text-sm">
+            &copy; 2025 My Fantastic Website. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const magicButton = document.getElementById('magicButton');
+        const messageArea = document.getElementById('messageArea');
+
+        magicButton.addEventListener('click', function() {
+            messageArea.textContent = "You've made the website fantastic!";
+            messageArea.classList.add('animate-pulse', 'text-green-600');
+            // You can add more JavaScript here to change the website's appearance or behavior
+            // For example, you could change the background color, add animations, or load new content.
+        });
+    </script>
+</body>
+</html>
+
